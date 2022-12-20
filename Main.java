@@ -21,12 +21,16 @@ public class Main {
         Scanner mec = new Scanner(System.in);
         int number;
 
-        do{
+        do {
             System.out.print("Bir sayı giriniz: ");
             number = mec.nextInt();
-            System.out.println(isPalindrome(number));
-        }while(number>=0);
+            if (isPalindrome(number) == true) 
+                System.out.println(number + " Sayısı Palindromdur!");
+             else 
 
+                System.out.println(number + " Sayısı Palindrom değildir!");
+            
+        } while (number >= 0);
 
     }
 }
